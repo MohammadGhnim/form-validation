@@ -43,3 +43,14 @@ input{
     order: 3;
     color: black;
 }
+input[type="text"]{
+    order: 2;
+}
+#password{
+    order: 3;
+    color: black;
+}
+iput[type="password"]{
+    order: 4;
+}
+
