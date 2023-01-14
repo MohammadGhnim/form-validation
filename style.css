@@ -69,4 +69,7 @@ iput[type="password"]{
 input[type="password"]:focus:valid{
     border-bottom: 2px solid #00ff04;
 }
-
+input[type="password"]:focus:invalid{
+    border-bottom: 2px solid red;
+    color: red;
+}
