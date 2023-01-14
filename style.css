@@ -53,4 +53,16 @@ input[type="text"]{
 iput[type="password"]{
     order: 4;
 }
-
+#btn{
+    width: 40%;
+    height: 30px;
+    margin-left: 60%;
+    order: 5;
+    border: 2px solid #ffbe6a;
+    color: black;
+    background: #ffbe6a;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+}
