@@ -66,3 +66,7 @@ iput[type="password"]{
     letter-spacing: 2px;
     position: relative;
 }
+input[type="password"]:focus:valid{
+    border-bottom: 2px solid #00ff04;
+}
+
