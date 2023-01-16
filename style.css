@@ -1,75 +1,142 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-*{
-    margin: 0;
+*,
+*:before,
+*:after{
     padding: 0;
-    box-sizing: border-box;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
-.form-content{
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body{
+    height: 100vh;
+    background: -o-linear-gradient(
+        315deg,
+        #61D954,
+        #2EBF75
+    );
+    background: linear-gradient(
+        135deg,
+        #61D954,
+        #2EBF75
+    );
+}
+.container{
+    height: 480px;
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 form{
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    background: white;
+    height: 400px;
+    width: 100%;
+    background-color: #202020;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    padding:  0 30px;
+    -webkit-box-shadow: 0 20px 25px rgba(0,0,0,0.35);
+            box-shadow: 0 20px 25px rgba(0,0,0,0.35);
 }
-form h2{
-    color: #ffbe6a;
-    text-shadow: 2px 2px 5px #f6ffaa;
-    text-align: center;
+label{
+    position: absolute;
+    display: block;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #e5e5e5;
+    font-size: 12px;
 }
 input{
-    width: 80%;
-    height: 30px;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #ffbe6a;
-    background: transparent;
-    color: red;
-    transition:opacity .2s;
+    display: block;
+    height: 2px;
+    width: 260px;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    background-color: #4D4D4D;
+    color: #ffffff;
+    pointer-events: none;
+}
+label[for = "username"]{
+    bottom: 280px;
 }
 #username{
-    order: 3;
-    color: black;
+    bottom: 275px;
 }
-input[type="text"]{
-    order: 2;
+label[for = "password"]{
+    bottom: 170px;
 }
 #password{
-    order: 3;
-    color: black;
+    bottom: 165px;
 }
-iput[type="password"]{
-    order: 4;
+button{
+    width: 260px;
+    position: absolute;
+    bottom: 60px;
+    padding: 15px 0;
+    background-color: #2EBF75;
+    color: #ffffff;
+    border-radius: 5px;
 }
-#btn{
-    width: 40%;
-    height: 30px;
-    margin-left: 60%;
-    order: 5;
-    border: 2px solid #ffbe6a;
-    color: black;
-    background: #ffbe6a;
-    border-radius: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    position: relative;
+::-webkit-input-placeholder{
+    color: transparent;
 }
-input[type="password"]:focus:valid{
-    border-bottom: 2px solid #00ff04;
+::-moz-placeholder{
+    color: transparent;
 }
-input[type="password"]:focus:invalid{
-    border-bottom: 2px solid red;
-    color: red;
+:-ms-input-placeholder{
+    color: transparent;
 }
+::-ms-input-placeholder{
+    color: transparent;
+}
+::placeholder{
+    color: transparent;
+}
+.my-style::-webkit-input-placeholder{
+    color: #a5a5a5;
+}
+.my-style::-moz-placeholder{
+    color: #a5a5a5;
+}
+.my-style:-ms-input-placeholder{
+    color: #a5a5a5;
+}
+.my-style::-ms-input-placeholder{
+    color: #a5a5a5;
+}
+.my-style::placeholder{
+    color: #a5a5a5;
+}
+a{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #202020;
+    color: #2EBF75;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 20px 25px rgba(0,0,0,0.35);
+            box-shadow: 0 20px 25px rgba(0,0,0,0.35);
+}
+

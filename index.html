@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation</title>
+    <title>Placeholder Animation</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="http://fonts.googleapis.com">
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Raleway&display=swap">
-
 </head>
 <body>
-    <div class="form-content">
-        <form action="">
-            <h2>Welcome</h2>
-                                <!--username-->
-            <input type="text" for="username" maxlength="7" minlength="4" required>
-            <label id="username">Username <span>Oops! you haven't entered a minimum of 4 characters or maximum characters of 7 has been exceeded!</span></label>
-                                <!--password-->
-            <input type="password" for="password" minlength="8" required>
-            <label id="password">password <span>Oops! you haven't entered a minimum of 8 characters!</span></label>   
-                                <!--btn-->
-            <button id="btn">sign in<span>sign in not successful.</span></button>             
-        </form>
-    </div>
-    <div class="summary">
-        <h2>?</h2>
-        <p>hello there! <br><br>
-        If you have any contribution to make you can check out this repo on github @http://github.com/ceemarvie/form-validation-with-css or you can just <a href="https://githup.com/ceemarvie/form-validation-with-css">Click here.</a><br><br>
-        The rules for validation the form will be shown to you once you attempt signing in. <br><br>Do upvote and make sure to contribute on github.
-        </p>
-    </div>
+<div class="container">
+    <form>
+        <input type="text" id="username" placeholder="Enter your username">
+        <label for="username" onclick="expand(this)">USERNAME</label>
+    
+        <input type="password" id="password" placeholder="Enter your password">
+        <label for="password" onclick="expand(this)">PASSWORD</label>
+    
+        <button>SUBMIT</button>
+    </form>
+    <a href="https://youtu.be/B5lqD6jkTF4" target="_blank">Learn To Code</a>
+</div>
+    <script>
+function expand(label){
+    var elemId = label.getAttribute("for");
+    document.getElementById(elemId).style.height = "45px";
+    document.getElementById(elemId).classList.add('my-style');
+    label.style.transform = "translateY(-45px)";
+}
+    </script>
 </body>
 </html>
